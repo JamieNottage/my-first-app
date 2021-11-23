@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
+import { MessageComponent } from '../message/message.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, MessageComponent], // Register the components
+  imports: [BrowserModule], // Load the child module
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent], // Load the first component on the page
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    console.log('AppModule Loaded');
+  }
+}
