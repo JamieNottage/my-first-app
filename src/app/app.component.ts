@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
       <h1 style="text-align: center;">Welcome to Root Component</h1>
       <button class="btn btn-warning">Bootstrap Button</button>
     </div>
-    <msg></msg>`,
+    <header></header>
+    <br />
+    <msg style="float:left"></msg>
+    <msg></msg>
+    <br />
+    <footer></footer>`,
 })
 export class AppComponent {
   constructor() {
